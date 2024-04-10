@@ -1,0 +1,76 @@
+
+
+$ mkdir SI_2024_lab1_225128 
+
+$ cd SI_2024_lab1_225128
+
+
+$ git init
+
+$ git remote add origin https://github.com/ivanageorgievska/SI_2024_lab1_225128.git
+
+$ nano README.txt
+
+$ git add *
+
+$ git commit -m "Initial commit"
+
+$ git add *
+
+$ git commit -m "Add starter code"
+
+$ git push -u origin main
+
+$ git push -u origin master
+
+$ git branch bug1
+
+$ git branch bug2
+
+$ git checkout bug1
+
+$ git add *
+
+$ git commit -m "Fix wrong condition in filterOddLengthString"
+
+$ git checkout bug2
+
+$ git add SILab1_2.java
+
+$ git commit -m "Fix wrong condition in makeBigStringFrom"
+
+$ git checkout bug1
+
+$ git add *
+
+$ git commit -m "Call method filterOddLengthStrings in main class"
+
+$ git checkout bug2
+
+$ git add *
+
+$ git commit -m "Call method makeBigStringFrom in main class"
+
+$ git push -u origin bug1
+
+$ git push -u origin bug2
+
+$ git checkout master
+
+$ git merge bug1
+
+$ git push --all origin
+
+$ git checkout bug2
+
+$ git rebase master
+
+$ git add *
+
+$ git rebase --continue
+
+$ git merge bug2
+
+$ git push --all origin
+
+$ git push --force --all origin
